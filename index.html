@@ -1110,7 +1110,6 @@ function normalizeRow(row) {
     name: combinedName || singleName,
     title: pick('title', 'jobtitle', 'position', 'job'),
     business_unit: pick('businessunit', 'bu'),
-    location_code: pick('locationcode', 'location', 'office'),
     city: pick('city', 'residencecity', 'hometowncity', 'primaryaddresscity'),
     state: pick('state', 'residencestate', 'province', 'stateprovince',
                 'primaryaddressstateterritory').toUpperCase().slice(0,3),
